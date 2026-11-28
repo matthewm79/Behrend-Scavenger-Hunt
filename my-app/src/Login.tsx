@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import behrendLogo from './assets/behrend.png'
-import './App.css'
+import './Login.css'
 
-function App() {
+function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -52,4 +52,4 @@ function App() {
   )
 }
 
-export default App
+export default Login
