@@ -1,0 +1,182 @@
+/* Full-height page layout */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Top Navy Bar */
+.login-navbar {
+  height: 76px;
+  background: linear-gradient(90deg, #001E44 0%, #092c5c 60%, #103c78 100%);
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  z-index: 2;
+}
+
+.login-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Campus Photo Container */
+.login-hero {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background-image: url("/web-client/src/assets/campus.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Blue-tinted dark overlay matching the mockup */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 64, 124, 0.45);
+}
+
+/* Foreground stack (Title + Card) */
+.login-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.login-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* White Centered Card */
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.form-input {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1e407c;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.form-input:focus {
+  border-color: #96bee6;
+}
+
+.form-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.85rem;
+}
+
+/* Dark Charcoal Sign In Button */
+.btn-sign-in {
+  margin-top: 4px;
+  height: 42px;
+  width: 100%;
+  background: #2b2b2b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-sign-in:hover:not(:disabled) {
+  background: #1a1a1a;
+}
+
+.btn-sign-in:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Bottom Row inside Card */
+.card-footer {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.link-forgot {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #96bee6;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-forgot:hover {
+  color: #1e407c;
+}
+
+/* Light Blue Pill Guest Button */
+.btn-guest {
+  background: #96bee6;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 9px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-guest:hover {
+  background: #96bee6;
+}
